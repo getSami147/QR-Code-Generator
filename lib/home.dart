@@ -1,6 +1,6 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tut/player.dart';
 import 'package:flutter_tut/qrScanner.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
@@ -65,3 +65,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+

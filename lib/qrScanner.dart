@@ -1,9 +1,8 @@
-import 'dart:ffi';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tut/qrScannerResult.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qr_scanner_overlay/qr_scanner_overlay.dart';
 
 class QRScanner extends StatefulWidget {
@@ -94,7 +93,9 @@ class _QRScannerState extends State<QRScanner> {
                           if (!isScanCompleted) {
                             var code =
                                 barcodes.raw[0]['rawValue'].toString() ?? '...';
-                            print("Code: ${code}");
+                            if (kDebugMode) {
+                              print("Code: ${code}");
+                            }
 
                             isScanCompleted = true;
                             Navigator.push(

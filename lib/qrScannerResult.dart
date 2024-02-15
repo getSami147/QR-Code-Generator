@@ -34,7 +34,7 @@ class _QRScannerResultState extends State<QRScannerResult> {
             size: 200,
             ),
                  const Text(
-              "Scanned Result:",
+              "Scanned Result",
               style: TextStyle(fontWeight: FontWeight.w500, letterSpacing: 1),
             ),   const SizedBox(
               height: 10,

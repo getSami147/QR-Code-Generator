@@ -73,7 +73,7 @@ class _AuthScreenState extends State<AuthScreen> {
       }
 
       if (authenticated) {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) =>  Home()));
       }
     } on PlatformException catch (e) {
       print(e);
@@ -106,8 +106,8 @@ class _AuthScreenState extends State<AuthScreen> {
                         : Colors.grey,
               ),
             ),
-            const SizedBox(height: 20),
-            Text('Supported biometrics : $availableBiometrics'),
+            // const SizedBox(height: 20),
+            // Text('Supported biometrics : $availableBiometrics'),
             const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
